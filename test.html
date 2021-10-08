@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    </link>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    </link>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <style>
+        .owl-theme .item {
+            height: 300px;
+            padding: 10px;
+        }
+
+        .owl-carousel .item h4 {
+            margin-top: 20px;
+        }
+
+        .owl-dots {
+            display: none;
+        }
+
+        .item {
+            display: inline-block;
+        }
+
+        h1 {
+            color: lightsteelblue
+        }
+
+        h2 {
+            color: royalblue;
+        }
+
+        a {
+            text-decoration: none;
+            color: royalblue;
+            font-size: larger;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: whitesmoke;
+            background-color: yellowgreen;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="./img/bake1.jpg" alt="">
+            <h1>獨家雙層巧克力餅乾</h1>
+            <h2>double chocolate cookie</h2>
+            <a href="">立即上課</a>
+        </div>
+        <div class="item">
+            <img src="./img/bake2.jpg" alt="">
+            <h1>芋泥甜心紫泥塔</h1>
+            <h2>taro sweet cake</h2>
+            <a href="">立即上課</a>
+        </div>
+        <div class="item">
+            <img src="./img/bake3.jpg" alt="">
+            <h1>抹茶餡戚風蛋糕</h1>
+            <h2>Matcha hank cup cake</h2>
+            <a href="">立即上課</a>
+        </div>
+    </div>
+
+    <div class="owl-carousel owl-theme">
+
+        <div class="item">
+            <img src="./img/Product1.png" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/Product3.png" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/Product4.png" alt="">
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    $(".owl-carousel").owlCarousel({
+        loop: true, // 循環播放
+        margin: 30, // 外距 10px
+        nav: false, // 顯示點點
+        responsive: {
+            0: {
+                items: 1 // 螢幕大小為 0~600 顯示 1 個項目
+            },
+            600: {
+                items: 3 // 螢幕大小為 600~1000 顯示 3 個項目
+            },
+            1000: {
+                items: 5 // 螢幕大小為 1000 以上 顯示 5 個項目
+            }
+        }
+    });
+</script>
+
+</html>

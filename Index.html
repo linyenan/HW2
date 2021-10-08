@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your cake</title>
+    <LINK REL="shortcut icon" href="./img/logo5.png">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+        html,
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .header-section {
+            width: 100%;
+            margin: 0 auto;
+            position: top-fixed;
+            background-color: transparent;
+            top: 0;
+            height: 200px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+
+        .menu li a {
+            color: #fff;
+            display: block;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: -10px;
+
+        }
+
+        .menu li a:hover {
+            color: #42459d;
+        }
+
+        @media (max-width: 768px) {
+            .header-section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+
+        /* -------------------------------header-section END---------------------------------- */
+
+        .menu-list {
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu-logo {
+            padding-right: 1030px;
+            margin: 40px 0 -10px;
+        }
+
+        .menu-content {
+            padding-left: 80px;
+        }
+
+        .banner {
+            height: 1000px;
+            background: url("./img/strawberry.jpg") no-repeat right/cover;
+        }
+
+        .banner-mask {
+            margin-top: 120px;
+            padding: 100px 40px 100px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.16);
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                background-image: url("./img/strawberry2.png");
+            }
+        }
+
+        /* ------------------------------------banner END------------------------------------  */
+
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .content {
+            width: 100%;
+
+        }
+
+        .content h3 {
+            padding-top: 80px;
+            font-weight: normal;
+            font-size: 30px;
+            margin-bottom: 24px;
+            color: #42459d;
+            text-align: center;
+        }
+
+        .content p {
+            font-weight: normal;
+            font-size: 28px;
+            margin-bottom: 60px;
+            text-align: center;
+
+        }
+
+        @media(max-width: 768px) {
+
+            .content-section {
+                width: 100%;
+            }
+
+            .content {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* ------------------------------content END--------------------------------------- */
+
+        .news {
+            padding: 50px 0;
+            background-color: #FFFAFA;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-height: 900px;
+        }
+
+        .news h2 {
+            color: #CD5C5C;
+            text-align: center;
+            font-size: 34px;
+            position: relative;
+            font-weight: bold;
+            margin: 50px 0px 30px;
+        }
+
+        .news h2:before {
+            content: "";
+            height: 1px;
+            width: 60%;
+            border: 1px solid #FA8072;
+            background-color: #FA8072;
+            position: absolute;
+            top: 45%;
+            left: -100px;
+        }
+
+        .news h2:after {
+            content: "";
+            height: 1px;
+            width: 60%;
+            border: 1px solid #FA8072;
+            background-color: #FA8072;
+            position: absolute;
+            top: 45%;
+            right: -100px;
+        }
+
+        .news h3 {
+            color: #42459d;
+            text-align: center;
+            font-size: 30px;
+            position: relative;
+            margin-bottom: 100px;
+        }
+
+        .news_item-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .news_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 25%;
+            margin: 0 3%;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .news_item {
+                width: 50%;
+                text-align: center;
+            }
+        }
+
+        .news_item a {
+            text-decoration: none;
+        }
+
+        .news_item img {
+            border-radius: 100%;
+            margin-bottom: 20px;
+            transform: scale (1, 1);
+            transition: all 1s ease-out;
+        }
+
+        .news_item img:hover {
+            transform: scale(1.2, 1.2);
+        }
+
+        .news_item h4 {
+            margin: 20px 0 11px;
+            font-size: 24px;
+            color: #42459d;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .news_item p {
+            text-align: center;
+            line-height: 20px;
+            width: 100%;
+            color: #000;
+        }
+
+        .link_lya {
+            background-color: #DB7093;
+            color: #42459d;
+            font-weight: bold;
+            margin-top: 30px;
+            height: 50px;
+            width: 100px;
+            font-size: 20px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .link_lya:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .link1_lya {
+            color: #fff;
+            font-weight: bold;
+            margin-top: 30px;
+            height: 350px;
+            width: 100px;
+            font-size: 20px;
+            line-height: 50px;
+            text-align: center;
+
+        }
+
+        .link1_lya:hover {
+            color: #43459d;
+            text-decoration: none;
+
+        }
+
+        /* ------------------------------------news END-------------------------------------------- */
+        .sweet {
+            max-height: 900px;
+            background: #DB7093;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sweet_img {
+            width: 60%;
+            height: 900px;
+            background: url("./img/bake2.jpg") no-repeat center/cover;
+        }
+
+        .sweet_info {
+            width: 40%;
+            font-size: 16px;
+            color: #efe9e7;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        @media (max-width: 768px) {
+            .sweet {
+                max-height: none;
+                flex-wrap: wrap;
+            }
+
+            .sweet_img {
+                width: 100%;
+            }
+
+            .sweet_info {
+                width: 100%;
+                padding: 16px 64px;
+            }
+        }
+
+        .sweet1 {
+            background: #E6C35C;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sweet1_img {
+            width: 60%;
+            height: 800px;
+            background: url("./img/bake1.jpg") no-repeat center/cover;
+        }
+
+        .sweet1_info {
+            width: 40%;
+            font-size: 16px;
+            color: #000;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        @media (max-width: 768px) {
+            .sweet1 {
+                max-height: none;
+                flex-wrap: wrap;
+            }
+
+            .sweet1_img {
+                width: 100%;
+            }
+
+            .sweet1_info {
+                width: 100%;
+                padding: 16px 64px;
+            }
+        }
+
+        .sweet2 {
+            background: #8FBC8F;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sweet2_img {
+            width: 60%;
+            height: 900px;
+            background: url("./img/bake3.jpg") no-repeat center/cover;
+        }
+
+        .sweet2_info {
+            width: 40%;
+            font-size: 16px;
+            color: #fff;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .sweet_info p {
+            font-size: 20px;
+        }
+
+        .sweet1_info p {
+            font-size: 20px;
+        }
+
+        .sweet2_info p {
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .sweet2 {
+                max-height: none;
+                flex-wrap: wrap;
+            }
+
+            .sweet2_img {
+                width: 100%;
+            }
+
+            .sweet2_info {
+                width: 100%;
+                padding: 16px 64px;
+            }
+        }
+
+
+        .call-button {
+
+            margin-top: 30px;
+        }
+
+        .subscription {
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-image: url("./img/mango1.png");
+            height: 450px;
+            padding-bottom: 150px;
+            margin-top: 55px;
+
+        }
+
+        .subscription__input {
+            border: 2px solid #fff;
+
+        }
+
+        @media (min-width: 768px) {
+            .subscription__input {
+                width: 219px;
+            }
+        }
+
+        /* ----------------------------------subscription END-------------------------------------  */
+        .footer {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .footer_text {
+
+            color: #5E86C1;
+            font-weight: bold;
+            margin-right: 45px;
+            text-align: start;
+        }
+
+        .footer1_text {
+
+            color: #FF80BF;
+        }
+
+        /* -------------------------------------footer END---------------------------------------  */
+        .top {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
+
+        .size {
+            color: #DB7093;
+        }
+
+        /* ------------------------------------go to top END-------------------------------------  */
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="header-section" data-aos="fade-down">
+            <ul class="menu">
+                <li class="menu-logo"><a href="./index.html">
+                        <img src="./img/LOGO6.png" alt="logo" width="150" height="150">
+                    </a></li>
+                <div class="menu-list">
+                    <li class="menu-content">
+                        <a href="./Question.html">
+                            <i class="fas fa-question-circle"></i>
+                            <br>問與答
+                        </a>
+                    </li>
+                    <li class="menu-content">
+                        <a href="./Product.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <br>產品列表
+                        </a>
+                    </li>
+                    <li class="menu-content">
+                        <a href="./Login.html"><i class="fas fa-user"></i>
+                            <br>註冊/登入
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <!-- -------------------------------header-section END----------------------------------  -->
+
+        <div class="banner-mask">
+            <h2>
+                吃一口<br>自己動手做的蛋糕
+            </h2>
+            <p>
+                來場蛋糕約會吧<br>
+                <button type="button" class="btn btn-light">
+                    <i class="fas fa-utensils"></i> Make your own Cake <i class="fas fa-utensils"></i>
+                </button>
+            </p>
+        </div>
+    </div>
+    <!-- --------------------------------------banner END----------------------------------------  -->
+
+    <div class="news" id="news">
+        <h2>最新消息</h2>
+        <h3>門市商品預購中</h3>
+        <ul class="news_item-list">
+            <li class="news_item">
+                <a href="" data-aos="flip-left">
+                    <img src="./img/news1.jpg" alt="" />
+                    <h4>『GODIVA巧克力蛋糕』獨家販賣</h4>
+                    <p>
+                        今年夏天Your Cake與GODIVA再次聯手，推出讓全台螞蟻人欣喜若狂的甜點「GODIVA巧克力慕絲蛋糕」！
+                        經由獨家工法打製而成黑巧克力慕絲，搭配口感綿軟的黑巧克力海綿蛋糕。
+                    </p>
+                    <a href="" class="link_lya">查看更多</a>
+                </a>
+            </li>
+            <li class="news_item">
+                <a href="" data-aos="flip-left">
+                    <img src="./img/news2.jpg" alt="" />
+                    <h4>『草莓系列』 即將完售</h4>
+                    <p>
+                        每年冬天最期待的草莓季，除了吃遍各式草莓塔、草莓泡芙以外，最經典的草莓蛋糕也不能錯過！
+                        Your Cake獨特的草莓蛋糕夾入爆量新鮮草莓，特有的酸甜滋味加上濃郁鮮奶油完全絕配！
+                    </p>
+                    <a href="" class="link_lya">查看更多</a>
+                </a>
+            </li>
+            <li class="news_item">
+                <a href="" data-aos="flip-left">
+                    <img src="./img/news3.jpg" alt="" />
+                    <h4>『星河乳酪蛋糕』特惠八折</h4>
+                    <p>
+                        Oreo巧克力餅乾酥脆香濃的口感，與濃郁綿密的乳酪蛋糕相遇，
+                        無法言喻的迷人滋味，就像仰望一整片星河般的陶醉。
+                        因為做工繁複精巧，因此每年只有特定時間推出，現正八折優惠中。
+                    </p>
+                    <a href="" class="link_lya">查看更多</a>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- --------------------------------------news END----------------------------------------  -->
+
+    <div class="content-section">
+        <div class="content">
+            <h3>Your Cake，一切從《手作》開始</h3>
+            <p class="size"> 我們以手作課程為出發點， 讓幸福感充滿身邊<br>
+                誠摯的邀請您，一起找回生活中的儀式感</p>
+        </div>
+    </div>
+
+    <!-- --------------------------------------content END----------------------------------------  -->
+    <div class="sweet" id="sweet" data-aos="fade-up">
+        <div class="sweet_img"></div>
+        <div class="sweet_info">
+            <h2>主打課程：芋泥甜心紫泥塔</h2>
+            <h2>Special Sweet: taro sweet cake</h2>
+            <p>
+                做一款只屬於你紫芋泥塔蛋糕吧！
+                細緻芋泥裝飾成朵朵的玫瑰，放在千層蛋糕上面，讓你的心意不言而諭。
+                綿密溫潤的芋頭，加上香甜的紫薯，讓色彩更加飽滿鮮活，增添濃郁香氣，
+                堆疊在Q彈細膩的可麗餅皮中，每一口都是豐富的味蕾享受。<br>
+                課程內容：<br>
+                𝟙. 原味可麗餅皮20片（實作）<br>
+                𝟚. 馬茲卡彭鮮奶油香緹（示範）<br>
+                𝟛. 紫薯芋泥內餡（實作）<br>
+                𝟜. 玫瑰擠花（實作）<br>
+                𝟝. 鮮奶油裝飾（實作）<br>
+            </p>
+            <a href="" class="link1_lya">立即預約
+                <i class="fal fa-money-check-edit"></i>
+            </a>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="sweet1" id="sweet" data-aos="fade-up">
+        <div class="sweet1_img"></div>
+        <div class="sweet1_info">
+            <h2>精選課程：雙層巧克力餅乾</h2>
+            <h2>Special Sweet: double chocolate cookie</h2>
+            <p>
+                做一款只屬於你雙層巧克力餅乾吧！
+                細緻芋泥裝飾成朵朵的玫瑰，放在千層蛋糕上面，讓你的心意不言而諭。
+                綿密溫潤的芋頭，加上香甜的紫薯，讓色彩更加飽滿鮮活，增添濃郁香氣，
+                堆疊在Q彈細膩的可麗餅皮中，每一口都是豐富的味蕾享受。<br>
+                課程內容：<br>
+                𝟙. 原味可麗餅皮20片（實作）<br>
+                𝟚. 馬茲卡彭鮮奶油香緹（示範）<br>
+                𝟛. 紫薯芋泥內餡（實作）<br>
+                𝟜. 玫瑰擠花（實作）<br>
+                𝟝. 鮮奶油裝飾（實作）<br>
+            </p>
+            <div class="call-button text-start">
+                <a href="" class="link1_lya">立即預約
+                    <i class="fal fa-money-check-edit"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sweet2" id="sweet" data-aos="fade-up">
+        <div class="sweet2_img"></div>
+        <div class="sweet2_info">
+            <h2>熱門課程：抹茶餡戚風蛋糕</h2>
+            <h2>Your Bake: Matcha hank cup cake</h2>
+            <p>
+                做一款只屬於你抹茶餡戚風蛋糕吧！
+                細緻芋泥裝飾成朵朵的玫瑰，放在千層蛋糕上面，讓你的心意不言而諭。
+                綿密溫潤的芋頭，加上香甜的紫薯，讓色彩更加飽滿鮮活，增添濃郁香氣，
+                堆疊在Q彈細膩的可麗餅皮中，每一口都是豐富的味蕾享受。<br>
+                課程內容：<br>
+                𝟙. 原味可麗餅皮20片（實作）<br>
+                𝟚. 馬茲卡彭鮮奶油香緹（示範）<br>
+                𝟛. 紫薯芋泥內餡（實作）<br>
+                𝟜. 玫瑰擠花（實作）<br>
+                𝟝. 鮮奶油裝飾（實作）<br>
+            </p>
+            <div class="call-button text-start">
+                <a href="" class="link1_lya">立即預約
+                    <i class="fal fa-money-check-edit"></i>
+                </a></a>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------course END------------------------------------------- -->
+
+    <section class="subscription d-flex align-items-end" data-aos="fade-down">
+        <div class="container" data-aos="fade-up">
+            <label class="text-light h2 font-weight-bold mt-5 mb-5" for="subscription">記得訂閱<br>以獲取更多課程資訊！</label>
+            <div class="input-group">
+                <input type="email" class="subscription__input rounded-left px-4" id="subscription"
+                    placeholder="Your email address" aria-label="subscription" aria-describedby="subscription">
+                <div class="input-group-append">
+                    <button class="btn btn-light" type="button" id="subscribe">Subscribe</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ----------------------------------subscription END---------------------------------------- -->
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+            <div class="col-12 col-md">
+                <img class="mb-2" src="/img/logo6.png" alt="" width="220" height="220">
+            </div>
+            <div class="col-6 col-md">
+                <h5 class="footer1_text ">Your Cake</h5>
+                <ul class="list-unstyled text-small footer_text">
+                    <li class="mb-1"><a class="footer_text text-decoration-none" href="#">
+                            客服電話：0800-000-777</a></li>
+                    <li class="mb-1"><a class="footer_text text-decoration-none" href="#">
+                            實體門市：台北市中山區建國路32號</a>
+                    </li>
+                    <li class="mb-1"><a class="footer_text text-decoration-none" href="#">
+                            營業時間：10:00AM-20:00PM</a>
+                    </li>
+                    <li class="mb-1"><a class="footer_text text-decoration-none" href="#">
+                            你的蛋糕股份有限公司</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md">
+                <h5 class="footer1_text">Social Media</h5>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="footer_text" href="#">
+                            <i class="fab fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li class="mb-1"><a class="footer_text" href="#">
+                            <i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li class="mb-1"><a class="footer_text" href="#">
+                            <i class="far fa-comment-dots fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-md">
+                <h5 class="footer1_text">Resources</h5>
+                <ul class="list-unstyled text-small">
+
+                    <p class="footer_text">所有圖片皆來自於網路<br>
+                        Copyright© 2021<br>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- --------------------------------------footer END------------------------------------------ -->
+    <div class="top">
+        <a href="#">
+            <i class="fad fa-chevron-circle-up fa-3x size"></i>
+        </a>
+    </div>
+
+    <!-- --------------------------------------go to top END--------------------------------------- -->
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
+
+
+    <script>
+        $(window).scroll(function () {
+            var height = $(window).scrollTop();
+            if (height > 1500) {
+                $(".top a").fadeIn();
+            } else {
+                $(".top a").fadeOut();
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cake</title>
+    <LINK REL="shortcut icon" href="./img/logo5.png">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        html,
+        body {
+            scroll-behavior: smooth;
+            background-color: #FFFAFA;
+        }
+
+        .header-section {
+            width: 100%;
+            margin: 0 auto;
+            position: fixed;
+            background-color: transparent;
+            top: 0;
+            height: 150px;
+        }
+
+        .menu-list {
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu-logo {
+            padding-right: 1030px;
+            margin: 40px 0 -10px;
+        }
+
+        .menu-content {
+            padding-left: 80px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .menu li a {
+            color: #42459d;
+            display: block;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: -10px;
+        }
+
+        .menu li a:hover {
+            color: #E6005C;
+        }
+
+        /* -------------------------------header-section END---------------------------------- */
+
+        .banner {
+            max-width: 940px;
+            height: 600px;
+            margin: 150px auto;
+            box-shadow: 15px 15px 9px lightgrey;
+            background: url("./img/sell1.jpg") no-repeat center/cover;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                margin: 150px auto;
+                box-shadow: 3px 3px 9px lightgrey;
+                background: url("./img/sell2.jpg") no-repeat center/cover;
+            }
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: -70px auto;
+            max-width: 1000px;
+        }
+
+        .content-menu {
+            border: 2px solid #42459d;
+            width: 30%;
+            height: 290px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .content-menu {
+                border: 2px solid #42459d;
+                width: 100%;
+                margin: 0 16px;
+            }
+        }
+
+        .title li a {
+            color: #42459d;
+            text-decoration: none;
+            display: block;
+        }
+
+        .title :hover {
+            color: #ffffff;
+            background-color: #5E86C1;
+        }
+
+        .title li {
+            background-color: #fff;
+            text-align: center;
+            padding: 8px;
+            font-size: 20px;
+            border-bottom: 2px solid #42459d;
+        }
+
+        .content-item {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 60%;
+            padding-right: 50px;
+            border: 2px solid #42459d;
+            margin-bottom: 100px;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .content-item {
+                width: 100%;
+                justify-content: center;
+                margin-top: 100px;
+            }
+        }
+
+        .item {
+            width: 40%;
+        }
+
+
+        @media (max-width: 768px) {
+            .item {
+                width: 50%;
+                margin: 0 8px;
+            }
+        }
+
+        .name1 {
+            width: 250px;
+            height: 300px;
+            display: flex;
+            justify-content: space-around;
+            color: #42459d;
+            font-size: 32px;
+        }
+
+        .name1 img {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .name1 img:hover {
+            transform: scale(1.2, 1.2);
+            transition: 0.5s;
+        }
+
+        .name2 {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: #42459d;
+            border: 2px solid #5E86C1;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .name3 {
+            width: 100%;
+            height: 50px;
+            background: #5E86C1;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .name3 a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        @media(max-width:768px) {
+
+            .name1,
+            .name2,
+            .name3 {
+                width: 100%;
+            }
+
+            .name1 a {
+                display: none;
+            }
+        }
+
+        /* -------------------------------------content END----------------------------------------- */
+
+        .bar {
+            display: flex;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .nav {
+            width: 1100px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                width: 100%;
+                font-size: 20px;
+                justify-content: center;
+            }
+        }
+
+        .nav li {
+            margin: 0 3px;
+            text-align: center;
+            width: 50px;
+        }
+
+        .nav li a {
+            display: block;
+            color: #42459d;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .nav li a:hover {
+            color: #ffffff;
+            background-color: #5E86C1;
+        }
+
+        /* -------------------------------------bar END---------------------------------------  */
+
+        .footer {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .footer_text {
+            color: #5E86C1;
+            font-weight: bold;
+            margin-right: 45px;
+            text-align: start;
+        }
+
+        .footer1_text {
+            color: #DB7093;
+            font-weight: bold;
+        }
+
+        /* -------------------------------------footer END---------------------------------------  */
+
+        .top {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
+
+        .size {
+            color: #DB7093;
+        }
+
+        /* -----------------------------------go to top END---------------------------------------  */
+    </style>
+</head>
+
+<body>
+    <div class="header-section" data-aos="fade-down">
+        <ul class="menu">
+            <li class="menu-logo"><a href="./index.html">
+                    <img src="./img/LOGO6.png" alt="logo" width="150" height="150">
+                </a></li>
+            <div class="menu-list">
+                <li class="menu-content">
+                    <a href="./Question.html">
+                        <i class="fas fa-question-circle"></i>
+                        <br>問與答
+                    </a>
+                </li>
+                <li class="menu-content">
+                    <a href="./Product.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <br>產品列表
+                    </a>
+                </li>
+                <li class="menu-content">
+                    <a href="./Login.html"><i class="fas fa-user"></i>
+                        <br>註冊/登入
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+    <!-- ----------------------------------header-section END-------------------------------------- -->
+
+    <div class="banner"></div>
+    <div class="content" id="product">
+        <div class="content-menu">
+            <ul class=title>
+                <li><a href="#"><i class="fas fa-shopping-bag"></i> 線上訂購 <i class="fas fa-shopping-bag"></i></a></li>
+                <ul>
+                    <li><a href="">杯子蛋糕（18）</a></li>
+                    <li><a href="">手做餅乾（30）</a></li>
+                    <li><a href="">人氣甜點（26）</a></li>
+                    <li><a href="">烘培課程（03）</a></li>
+                    <li><a href="">經典禮盒（12）</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="content-item">
+            <div class="item">
+                <div class="name1">
+                    <img src="./img/Product1.png" alt="">
+                    <a href=""><i class="fal fa-heart-circle"></i></a>
+                </div>
+                <div class="name2">
+                    <div>黃金流沙杯子蛋糕</div>
+                    <div>NT$ 250</div>
+                </div>
+                <div class="name3 "><a href="">立即購買 <i class="fas fa-cart-plus"></i></a></div>
+            </div>
+
+            <div class="item">
+                <div class="name1">
+                    <img src="./img/Product3.png" alt="">
+                    <a href=""><i class="fal fa-heart-circle"></i></a>
+                </div>
+                <div class="name2">
+                    <div>草莓奶油甜心蛋糕</div>
+                    <div>NT$ 580</div>
+                </div>
+                <div class="name3 name3_sold animate__animated">
+                    <a href=""><a href=""><i class="fas fa-times"></i> 目前已售完 <i class="fas fa-times"></i> </a>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <div class="name1">
+                    <img src="./img/Product9.png" alt="">
+                    <a href=""><i class="fal fa-heart-circle"></i></a>
+                </div>
+                <div class="name2">
+                    <div>巧克力多拿滋禮盒</div>
+                    <div>NT$ 290</div>
+                </div>
+                <div class="name3"><a href="">立即購買 <i class="fas fa-cart-plus"></i></a></div>
+            </div>
+            <div class="item">
+                <div class="name1">
+                    <img src="./img/Product4.png" alt="">
+                    <a href=""><i class="fal fa-heart-circle"></i></a>
+                </div>
+                <div class="name2">
+                    <div>OREO雙層奶油夾心 </div>
+                    <div>NT$ 220</div>
+                </div>
+                <div class="name3"><a href="">立即購買 <i class="fas fa-cart-plus"></i></a></div>
+            </div>
+            <div class="item">
+                <div class="name1">
+                    <img src="./img/Product3.png" alt="">
+                    <a href=""><i class="fal fa-heart-circle"></i></a>
+                </div>
+                <div class="name2">
+                    <div>莓心巧克雙層塔派</div>
+                    <div>NT$ 420</div>
+                </div>
+                <div class="name3"><a href="">立即購買 <i class="fas fa-cart-plus"></i></a></div>
+            </div>
+            <div class="item">
+                <div class="name1">
+                    <img src="./img/Product7.png" alt="">
+                    <a href=""><i class="fal fa-heart-circle"></i></a>
+                </div>
+                <div class="name2">
+                    <div>抹茶果片奶油蛋糕</div>
+                    <div>NT$ 390</div>
+                </div>
+                <div class="name3"><a href="">立即購買 <i class="fas fa-cart-plus"></i></a></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------content END------------------------------------------ -->
+
+    <div class="bar">
+        <ul class="nav">
+            <li><a href="">
+                    <i class="fas fa-chevron-left"></i></a>
+            </li>
+            <li> <a href="">1</a></li>
+            <li> <a href="">2</a></li>
+            <li> <a href="">3</a></li>
+            <li> <a href="">4</a></li>
+            <li> <a href="">5</a></li>
+            <li> <a href="">6</a></li>
+            <li><a href="">
+                    <i class="fas fa-chevron-right"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- -----------------------------------------bar END------------------------------------------ -->
+
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+            <div class="col-12 col-md">
+                <img class="mb-2" src="./img/logo6.png" alt="" width="220" height="220">
+            </div>
+            <div class="col-6 col-md">
+                <h5 class="footer1_text ">Your Cake</h5>
+                <ul class="list-unstyled text-small footer_text">
+                    <li class="mb-1"><a class="footer_text text-decoration-none" href="#">客服電話：0800-000-777</a></li>
+                    <li class="mb-1"><a class="footer_text text-decoration-none" href="#">實體門市：台北市中山區建國路32號</a>
+                    </li>
+                    <li class="mb-1"><a class="footer_text text-decoration-none" href="#">營業時間：10:00AM-20:00PM</a>
+                    </li>
+                    <li class="mb-1"><a class="footer_text text-decoration-none" href="#">你的蛋糕股份有限公司</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5 class="footer1_text">聯繫我們</h5>
+                <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="footer_text" href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li class="mb-1"><a class="footer_text" href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li class="mb-1"><a class="footer_text" href="#"><i class="far fa-comment-dots fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5 class="footer1_text">Resources</h5>
+                <ul class="list-unstyled text-small">
+
+                    <p class="footer_text">所有圖片皆來自於網路<br>
+                        Copyright© 2021<br>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- --------------------------------------footer END------------------------------------------ -->
+    <div class="top">
+        <a href="#">
+            <i class="fad fa-chevron-circle-up fa-3x size"></i>
+        </a>
+    </div>
+
+    <!-- --------------------------------------go to top END------------------------------------------ -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 2000,
+            once: true
+        });
+    </script>
+
+    <script src="./js/jquery-3.6.0.js"></script>
+
+    <script>
+        $(window).scroll(function () {
+            var height = $(window).scrollTop();
+            if (height > 1500) {
+                $(".top a").fadeIn();
+            } else {
+                $(".top a").fadeOut();
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            // 指定 DOM 元素執行 click 事件
+            $(".name3_sold").click(function (e) {
+                // 將 a 標籤的預設行為消除
+                e.preventDefault();
+                // 當點擊時，新增 animate__shakeX
+                $(".name3_sold").addClass("animate__shakeX");
+                // 過 1 秒後會將 animate__shakeX 移除
+                setTimeout(function () {
+                    $(".name3_sold").removeClass("animate__shakeX");
+                }, 1000);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
